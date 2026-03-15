@@ -1,24 +1,32 @@
-/* 超明显渐变主题 */
+/* 超级明显渐变主题 - 蓝紫粉彩虹 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
 
-/* 整个页面超明显渐变背景 */
+/* 全屏背景超级渐变 */
 body, html {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+  background: linear-gradient(45deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6, #FF6B6B) !important;
+  background-size: 400% 400% !important;
+  animation: gradientBG 15s ease infinite !important;
   min-height: 100vh !important;
 }
 
-/* 主内容区 */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 主内容区 - 透明效果 */
 #page,
 #content,
 #main-content {
-  background: rgba(255,255,255,0.95) !important;
+  background: rgba(255,255,255,0.85) !important;
   border-radius: 30px !important;
-  margin: 30px !important;
-  padding: 30px !important;
-  box-shadow: 0 10px 60px rgba(102,126,234,0.4) !important;
+  margin: 40px !important;
+  padding: 40px !important;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.3) !important;
 }
 
-/* 文章卡片 - 超明显 */
+/* 文章卡片 - 超级渐变 */
 #post-panel,
 #archive-panel,
 .article,
@@ -28,16 +36,16 @@ body, html {
 .recent-post-item,
 .postswrapper,
 #recent-posts .recent-post-item {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  border-radius: 25px !important;
-  box-shadow: 0 15px 50px rgba(102,126,234,0.5) !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 20px 60px rgba(102,126,234,0.6) !important;
   border: none !important;
   color: #fff !important;
-  padding: 25px !important;
-  margin: 20px 0 !important;
+  padding: 30px !important;
+  margin: 25px 0 !important;
 }
 
-/* 文章标题和内容白色 */
+/* 文章标题和内容 */
 .article-title,
 .post-title,
 .article-title a,
@@ -47,28 +55,31 @@ body, html {
 .article-meta,
 .article-meta a {
   color: #fff !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2) !important;
 }
 
-/* 侧边栏 - 超明显 */
+/* 侧边栏 - 超级渐变 */
 #aside-content .card-widget,
 .card-widget,
 .aside-list > li,
 .aside-list li {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  border-radius: 25px !important;
-  box-shadow: 0 15px 50px rgba(102,126,234,0.5) !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 20px 60px rgba(102,126,234,0.6) !important;
   border: none !important;
   color: #fff !important;
-  padding: 20px !important;
+  padding: 25px !important;
+  margin: 15px !important;
 }
 
-/* 侧边栏文字白色 */
+/* 侧边栏文字 */
 #aside-content .card-title,
 #aside-content .card-content,
 #aside-content .item-headline,
 #aside-content span,
 #aside-content a {
   color: #fff !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2) !important;
 }
 
 /* 导航栏 */
@@ -76,8 +87,10 @@ body, html {
 #page-header #nav,
 #page-header.not-top-img #nav,
 #page-header.nav-fixed #nav {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  box-shadow: 0 8px 30px rgba(102,126,234,0.5) !important;
+  background: linear-gradient(90deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
+  background-size: 400% 400% !important;
+  animation: gradientBG 10s ease infinite !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
   border-radius: 0 0 30px 30px !important;
 }
 
@@ -88,6 +101,8 @@ body, html {
 #nav .menus_item,
 #nav .menus_item a {
   color: #fff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3) !important;
+  font-weight: bold !important;
 }
 
 /* 按钮 */
@@ -97,11 +112,12 @@ button,
 #pagination .prev,
 #pagination .next,
 .button--primary {
-  background: linear-gradient(135deg, #fff 0%, #f0e6ff 100%) !important;
-  color: #667eea !important;
+  background: linear-gradient(90deg, #FF6B6B, #4D96FF) !important;
+  color: #fff !important;
   border-radius: 30px !important;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
   font-weight: bold !important;
+  border: none !important;
 }
 
 /* 标题 */
@@ -109,16 +125,17 @@ h1, h2, h3, h4, h5, h6,
 .article-title,
 .post-title {
   background: none !important;
-  -webkit-text-fill-color: initial !important;
-  background-clip: initial !important;
   color: #667eea !important;
+  -webkit-text-fill-color: #667eea !important;
 }
 
 /* 页脚 */
 #footer,
 #footer-wrap {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  box-shadow: 0 -8px 30px rgba(102,126,234,0.5) !important;
+  background: linear-gradient(90deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
+  background-size: 400% 400% !important;
+  animation: gradientBG 10s ease infinite !important;
+  box-shadow: 0 -10px 40px rgba(0,0,0,0.4) !important;
   border-radius: 30px 30px 0 0 !important;
   color: #fff !important;
 }
@@ -128,73 +145,89 @@ h1, h2, h3, h4, h5, h6,
 #site-subtitle,
 .site-title,
 .site-subtitle {
-  background: none !important;
-  -webkit-text-fill-color: #fff !important;
   color: #fff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
 }
 
 /* 标签 */
 .tag-cloud-tags a,
 .tag-cloud-tags-link {
-  background: linear-gradient(135deg, #fff 0%, #f0e6ff 100%) !important;
-  color: #667eea !important;
+  background: linear-gradient(90deg, #FF6B6B, #4D96FF) !important;
+  color: #fff !important;
   border-radius: 30px !important;
-  padding: 10px 20px !important;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+  padding: 12px 24px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
   border: none !important;
   font-weight: bold !important;
 }
 
 /* 滚动条 */
 ::-webkit-scrollbar {
-  width: 15px !important;
+  width: 18px !important;
 }
 
 ::-webkit-scrollbar-track {
-  background: #667eea !important;
+  background: linear-gradient(90deg, #FF6B6B, #4D96FF) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #fff 0%, #f0e6ff 100%) !important;
-  border-radius: 15px !important;
-  border: 3px solid #667eea !important;
+  background: linear-gradient(90deg, #FFD93D, #6BCB77) !important;
+  border-radius: 18px !important;
+  border: 3px solid #fff !important;
 }
 
 /* 选中文字 */
 ::selection {
-  background: #fff !important;
-  color: #667eea !important;
+  background: linear-gradient(90deg, #FF6B6B, #4D96FF) !important;
+  color: #fff !important;
 }
 
 /* 搜索按钮 */
 #search-button {
-  background: #fff !important;
-  color: #667eea !important;
+  background: linear-gradient(90deg, #FF6B6B, #4D96FF) !important;
+  color: #fff !important;
   border-radius: 30px !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
 }
 
 /* 回到顶部 */
 #to_top,
 #go-up {
-  background: linear-gradient(135deg, #fff 0%, #f0e6ff 100%) !important;
-  color: #667eea !important;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.3) !important;
+  background: linear-gradient(90deg, #FF6B6B, #4D96FF) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4) !important;
   border-radius: 50% !important;
+}
+
+/* 首页顶部大图区域 */
+#page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+  padding: 60px !important;
+  border-radius: 0 0 50px 50px !important;
+}
+
+/* 归档页面 */
+#archive-panel,
+.archive-item {
+  background: linear-gradient(135deg, rgba(102,126,234,0.3) 0%, rgba(118,75,162,0.3) 50%, rgba(240,147,251,0.3) 100%) !important;
+  border-radius: 25px !important;
+  padding: 20px !important;
+  margin: 15px 0 !important;
 }
 
 /* 夜间模式 */
 [data-theme="dark"] body,
 [data-theme="dark"] html {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 50%, #1a1a2e 100%) !important;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%) !important;
+  animation: none !important;
 }
 
-[data-theme="dark"] #page,
-[data-theme="dark"] #main-content {
-  background: rgba(30,30,50,0.95) !important;
+[data-theme="dark"] #page {
+  background: rgba(30,30,60,0.9) !important;
 }
 
 [data-theme="dark"] #post-panel,
 [data-theme="dark"] .article,
 [data-theme="dark"] #aside-content .card-widget {
-  background: linear-gradient(135deg, #3d3a6a 0%, #4d3a7a 100%) !important;
+  background: linear-gradient(135deg, #302b63 0%, #24243e 100%) !important;
 }
