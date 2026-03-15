@@ -1,25 +1,12 @@
-/* 彩虹渐变主题色 */
+/* 柔和渐变主题色 */
 :root {
-  --theme-color: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6);
-}
-
-/* 主要颜色覆盖 */
-#page,
-#recent-posts,
-#post-content,
-.article-container {
-  background: linear-gradient(135deg, rgba(255,107,107,0.05), rgba(255,142,83,0.05), rgba(255,217,61,0.05), rgba(107,203,119,0.05), rgba(77,150,255,0.05), rgba(155,89,182,0.05)) !important;
+  --theme-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --theme-gradient-light: linear-gradient(135deg, rgba(102,126,234,0.15) 0%, rgba(118,75,162,0.15) 100%);
 }
 
 /* 导航栏 */
 #nav {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
-}
-
-/* 侧边栏卡片 */
-.card-widget {
-  background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(255,142,83,0.1), rgba(255,217,61,0.1), rgba(107,203,119,0.1), rgba(77,150,255,0.1), rgba(155,89,182,0.1)) !important;
-  border-radius: 16px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
 }
 
 /* 按钮渐变 */
@@ -28,26 +15,26 @@ button,
 #pagination .page-number,
 #pagination .prev,
 #pagination .next {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
   border: none !important;
   color: white !important;
 }
 
-/* 链接颜色 */
-a {
-  color: #4D96FF !important;
+button:hover,
+.btn:hover {
+  background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102,126,234,0.4) !important;
 }
 
+/* 链接悬停 */
 a:hover {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #667eea !important;
 }
 
-/* 标题颜色 */
+/* 标题渐变 */
 h1, h2, h3, h4, h5, h6 {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,73 +42,94 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 分割线 */
 hr {
-  background: linear-gradient(90deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
+  background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent) !important;
   height: 2px !important;
 }
 
-/* 代码块 */
-pre, code {
-  background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(255,142,83,0.1), rgba(255,217,61,0.1), rgba(107,203,119,0.1), rgba(77,150,255,0.1), rgba(155,89,182,0.1)) !important;
-}
-
-/* 选中文字颜色 */
-::selection {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
-  color: white !important;
-}
-
 /* 滚动条 */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
 ::-webkit-scrollbar-track {
-  background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(255,142,83,0.1), rgba(255,217,61,0.1), rgba(107,203,119,0.1), rgba(77,150,255,0.1), rgba(155,89,182,0.1)) !important;
+  background: #f0f0f0 !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
   border-radius: 4px;
 }
 
 /* 页脚 */
 #footer {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
-}
-
-/* 首页文章卡片 */
-#article-container .row .col {
-  background: linear-gradient(135deg, rgba(255,107,107,0.08), rgba(255,142,83,0.08), rgba(255,217,61,0.08), rgba(107,203,119,0.08), rgba(77,150,255,0.08), rgba(155,89,182,0.08)) !important;
-  border-radius: 16px !important;
-  backdrop-filter: blur(10px);
-}
-
-/* 标签样式 */
-.tag-cloud-tags a {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
-  color: white !important;
-  border-radius: 20px !important;
-  padding: 5px 12px !important;
-}
-
-/* 归档日期 */
-#archive-container .timeline-item::before {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
 }
 
 /* 站点标题 */
 #site-title, #site-subtitle {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* 关于页面头像圆形渐变边框 */
-#about-page-avatar {
-  border: 4px solid transparent;
-  background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD93D, #6BCB77, #4D96FF, #9B59B6) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
+/* 选中文字 */
+::selection {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+/* 标签样式 */
+.tag-cloud-tags a {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 5px 12px !important;
+}
+
+.tag-cloud-tags a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(102,126,234,0.4) !important;
+}
+
+/* 归档时间线 */
+.timeline-item::before {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* 侧边栏图标 */
+#aside-content .fas, #aside-content .fab {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 文章内引用块 */
+blockquote {
+  border-left: 4px solid #667eea !important;
+  background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%) !important;
+}
+
+/* 代码块 */
+pre {
+  border-left: 4px solid #667eea !important;
+}
+
+/* 回到顶部按钮 */
+#to_top {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* 夜间模式适配 */
+[data-theme="dark"] {
+  --theme-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+[data-theme="dark"] #nav {
+  background: linear-gradient(135deg, #3d4a7a 0%, #4a3a6a 100%) !important;
+}
+
+[data-theme="dark"] #footer {
+  background: linear-gradient(135deg, #3d4a7a 0%, #4a3a6a 100%) !important;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #9b6bc4 100%) !important;
 }
